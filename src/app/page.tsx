@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Coffee, Pause, Play, RefreshCcw } from "lucide-react";
+import { Check, Coffee, Pause, Play, RefreshCcw } from "lucide-react";
 
 import {
   Select,
@@ -17,6 +17,13 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 import brewingMethods from "@/data/brewing_methods.json";
 import { Technique } from "@/definitions/technique";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function Home() {
   const [method, setMethod] = useState("");
@@ -162,55 +169,83 @@ export default function Home() {
           <div className="text-sm text-gray-500">
             {technique.short_description}
           </div>
-          <div className="flex items-center gap-2 mt-2">
-            <div className="relative w-24">
-              <Input
-                type="number"
-                placeholder="Coffee"
-                defaultValue={technique?.coffee_amount}
-                className="pr-6 w-24"
-              />
-              <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">
-                g
-              </span>
-            </div>
-            <div className="relative w-24">
-              <Input
-                type="number"
-                placeholder="Water"
-                defaultValue={technique?.water_amount}
-                className="pr-6 w-24"
-                // onChange={(e) => setWaterAmount(Number(e.target.value))}
-              />
-              <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">
-                ml
-              </span>
-            </div>
-          </div>
-          <div className="text-sm mt-2">
-            You would need{" "}
-            <span className="font-medium ">
-              {" "}
-              {technique?.coffee_amount} grams{" "}
-            </span>{" "}
-            of <span className="font-medium">{technique?.grind_size}</span>{" "}
-            coffee and{" "}
-            <span className="font-medium">{technique?.water_amount} ml</span> of
-            water boiled at{" "}
-            <span className="font-medium">{technique.water_temp} °C</span>. The
-            brew time is approximately{" "}
-            <span className="font-medium">{technique?.brew_time}</span>.
-          </div>
+
+          <Card className="w-[500px]">
+            <CardHeader>
+              <CardTitle>{technique.name}</CardTitle>
+              <CardDescription>{technique.short_description}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="text-gray-700 font-medium text-sm my-2">
+                Coffee & Water Settings
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="relative w-24">
+                  <Input
+                    type="number"
+                    placeholder="Coffee"
+                    defaultValue={technique?.coffee_amount}
+                    className="pr-6 w-24"
+                  />
+                  <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">
+                    g
+                  </span>
+                </div>
+                <div className="relative w-24">
+                  <Input
+                    type="number"
+                    placeholder="Water"
+                    defaultValue={technique?.water_amount}
+                    className="pr-6 w-24"
+                    // onChange={(e) => setWaterAmount(Number(e.target.value))}
+                  />
+                  <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">
+                    ml
+                  </span>
+                </div>
+              </div>
+              <div className="text-gray-700 font-medium text-sm my-2">
+                You would need
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-500">
+                <Check className="h-4 w-4" />
+                {technique?.coffee_amount} grams of {technique?.grind_size}{" "}
+                coffee
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-500">
+                <Check className="h-4 w-4" />
+                {technique?.water_amount} ml of water at {technique?.water_temp}{" "}
+                °C
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-500">
+                <Check className="h-4 w-4" />
+                {technique?.water_temp} °C of water
+              </div>
+              <div className="text-gray-700 font-medium text-sm my-2">
+                Before you start:
+              </div>
+              {technique.before_brew &&
+                technique.before_brew.map((step) => (
+                  <div
+                    key={step.order}
+                    className="flex items-center gap-2 text-sm text-gray-500"
+                  >
+                    <Check className="h-4 w-4" />
+                    {step.description}
+                  </div>
+                ))}
+            </CardContent>
+          </Card>
 
           <div className="mt-4">
             {isRunning ? (
               <div className="flex flex-col items-center gap-2">
                 <Alert className="w-[500px]">
                   <Coffee className="h-4 w-4" />
-                  {/* @ts-expect-error  currentStep is a number */}
-                  <AlertTitle>{technique.steps[currentStep].title}</AlertTitle>
+                  <AlertTitle>
+                    {technique.steps[currentStep].description}
+                  </AlertTitle>
                   <AlertDescription>
-                    {/* @ts-expect-error  currentStep is a number */}
                     {technique.steps[currentStep].description}
                     <div className="text-3xl font-semibold text-center mt-2">
                       {timeLeft >= 60
@@ -221,7 +256,6 @@ export default function Home() {
                     </div>
                     {currentStep < technique.steps.length - 1 && (
                       <div className="text-sm text-gray-400 mt-4">
-                        {/* @ts-expect-error  currentStep is a number */}
                         Next: {technique.steps[currentStep + 1].description}
                       </div>
                     )}

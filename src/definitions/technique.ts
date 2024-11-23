@@ -11,5 +11,9 @@ export type Technique = {
   short_description: string;
   last_used: string;
   is_favorite: boolean;
-  steps: [];
+  steps: {
+    order: number;
+    description: string;
+    time: number;
+  }[];
 };
