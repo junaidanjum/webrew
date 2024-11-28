@@ -44,14 +44,14 @@ export const brewingMethods: BrewingMethod[] = [
             duration: 45,
           },
           {
-            instruction: `Gently swirl the coffee slurry to ensure even saturation.`,
-            duration: 15,
-          },
-          {
             instruction: `Pour water up to ${Math.round(
               waterAmount * 0.6
             )}g of total water.`,
             duration: 30,
+          },
+            {
+            instruction: `Gently swirl the coffee slurry to ensure even saturation.`,
+            duration: 15,
           },
           {
             instruction: `Complete pouring water up to ${waterAmount}g.`,
