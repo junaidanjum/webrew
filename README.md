@@ -1,4 +1,4 @@
-# Webrew - Coffee Brewing Guide
+# Webrew - Coffee Brewing Timer App
 
 A no-frills brewing timer app, built purely for the love of coffee. No distractions, just straightforward timers to help you focus on brewing the perfect cup.
 

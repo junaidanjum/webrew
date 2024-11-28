@@ -30,12 +30,21 @@ export default function RootLayout({
           content="A no-frills brewing timer app, built purely for the love of coffee."
         />
         <meta name="author" content="Junaid Anjum" />
-        <meta name="og:title" content="Webrew" />
+        <meta property="og:title" content="Webrew" />
         <meta
-          name="og:description"
+          property="og:description"
           content="A no-frills brewing timer app, built purely for the love of coffee."
         />
-        <meta name="og:image" content="/brew.png" />
+        <meta property="og:image" content="/brew.png" />
+        <meta property="og:url" content="https://webrew.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Webrew" />
+        <meta
+          name="twitter:description"
+          content="A no-frills brewing timer app, built purely for the love of coffee."
+        />
+        <meta name="twitter:image" content="/brew.png" />
       </Head>
       <body className={`${font.className} antialiased`}>{children}</body>
     </html>

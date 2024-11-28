@@ -43,8 +43,8 @@ export default function CoffeeBrewingApp() {
   return (
     <div className="min-h-screen bg-background p-8 pb-2 antialiased flex flex-col justify-between">
       <div>
-        <h1 className="text-2xl mb-16 text-center tracking-tight font-light items-center flex justify-center gap-2">
-          <Coffee strokeWidth={1.5} /> Webrew
+        <h1 className="text-2xl mb-16 text-center tracking-tight items-center flex justify-center gap-2">
+          <Coffee strokeWidth={1.5} /> webrew
         </h1>
         <div className="max-w-xl mx-auto space-y-8">
           <MethodSelection
