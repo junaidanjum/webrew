@@ -1,6 +1,6 @@
 # Webrew - Coffee Brewing Guide
 
-Webrew is a web application designed to guide coffee enthusiasts through various brewing methods. It provides step-by-step instructions for brewing coffee using different techniques, allowing users to customize coffee and water amounts based on their preferences.
+A no-frills brewing timer app, built purely for the love of coffee. No distractions, just straightforward timers to help you focus on brewing the perfect cup.
 
 ## Features
 
