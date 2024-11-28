@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 
 
 import { Geist } from "next/font/google";
+import Head from "next/head";
 
 // If loading a variable font, you don't need to specify the font weight
 const font = Geist({ subsets: ["latin"] });
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#000000" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,8 +35,8 @@ export default function RootLayout({
           name="og:description"
           content="A no-frills brewing timer app, built purely for the love of coffee."
         />
-        <meta name="og:image" content="/icon.png" />
-      </head>
+        <meta name="og:image" content="/brew.png" />
+      </Head>
       <body className={`${font.className} antialiased`}>{children}</body>
     </html>
   );
