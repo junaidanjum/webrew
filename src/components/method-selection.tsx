@@ -31,16 +31,12 @@ export default function MethodSelection({
             onSelectMethod(methods.find((m) => m.id === value) || methods[0])
           }
         >
-          <SelectTrigger className="w-full font-mono text-sm border-0 bg-muted">
+          <SelectTrigger className="w-full  text-sm border-0 bg-muted">
             <SelectValue placeholder="Select a brewing method" />
           </SelectTrigger>
           <SelectContent>
             {methods.map((method) => (
-              <SelectItem
-                key={method.id}
-                value={method.id}
-                className="font-mono"
-              >
+              <SelectItem key={method.id} value={method.id}>
                 {method.name}
               </SelectItem>
             ))}
@@ -60,16 +56,12 @@ export default function MethodSelection({
             if (technique) onSelectTechnique(technique);
           }}
         >
-          <SelectTrigger className="w-full font-mono text-sm border-0 bg-muted">
+          <SelectTrigger className="w-full text-sm border-0 bg-muted">
             <SelectValue placeholder="Select a technique" />
           </SelectTrigger>
           <SelectContent>
             {selectedMethod.techniques.map((technique) => (
-              <SelectItem
-                key={technique.id}
-                value={technique.id}
-                className="font-mono"
-              >
+              <SelectItem key={technique.id} value={technique.id}>
                 {technique.name}
               </SelectItem>
             ))}

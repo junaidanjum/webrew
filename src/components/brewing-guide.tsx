@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { BrewingTechnique } from "@/lib/coffee-methods";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import { ArrowRight, Pause, Play, RotateCw } from "lucide-react";
 
 interface BrewingGuideProps {
   technique: BrewingTechnique;
@@ -87,7 +88,7 @@ export default function BrewingGuide({
   return (
     <div className="space-y-8 slide-up">
       <div className="space-y-4">
-        <h2 className="text-sm font-mono">{technique.name}</h2>
+        <h2 className="text-sm font-medium">{technique.name}</h2>
         <Progress
           value={
             ((currentStepDuration - remainingTime) / currentStepDuration) * 100
@@ -96,7 +97,7 @@ export default function BrewingGuide({
         />
       </div>
       <div className="space-y-6">
-        <div className="font-mono text-6xl tabular-nums tracking-tight text-center transition-all">
+        <div className="text-6xl tabular-nums tracking-tight text-center transition-all">
           {formatTime(remainingTime)}
         </div>
         <div className="space-y-2">
@@ -111,27 +112,27 @@ export default function BrewingGuide({
         </div>
       </div>
       <div className="flex justify-center gap-2">
-        <Button
-          onClick={!isRunning ? handleStart : handlePause}
-          variant="outline"
-          className="font-mono text-xs"
-        >
-          {!isRunning ? "Start" : "Pause"}
-        </Button>
-        <Button
-          onClick={handleReset}
-          variant="outline"
-          className="font-mono text-xs"
-        >
+        <Button onClick={handleReset} variant="link" className="text-xs">
+          <RotateCw />
           Reset
         </Button>
         <Button
+          onClick={!isRunning ? handleStart : handlePause}
+          variant="default"
+          className="text-xs"
+        >
+          {!isRunning ? <Play /> : <Pause />}
+          {!isRunning ? "Start" : "Pause"}
+        </Button>
+
+        <Button
           onClick={handleSkip}
           disabled={currentStep === steps.length - 1}
-          variant="outline"
-          className="font-mono text-xs"
+          variant="link"
+          className="text-xs"
         >
-          Skip
+          <ArrowRight />
+          Next
         </Button>
       </div>
     </div>

@@ -34,33 +34,39 @@ export const brewingMethods: BrewingMethod[] = [
         defaultCoffeeAmount: 30,
         steps: (coffeeAmount: number, waterAmount: number) => [
           {
-            instruction: `Add ${coffeeAmount}g of coffee to the filter`,
+            instruction: `Add ${coffeeAmount}g of coffee to v60 filter.`,
             duration: 10,
           },
           {
             instruction: `Add ${Math.round(
               coffeeAmount * 2
-            )}g of water to bloom`,
+            )}g of water to wet the coffee evenly. Wait for 45 seconds for the coffee to bloom.`,
             duration: 45,
           },
-          { instruction: "Gently swirl the coffee slurry", duration: 15 },
+          {
+            instruction: `Gently swirl the coffee slurry to ensure even saturation.`,
+            duration: 15,
+          },
           {
             instruction: `Pour water up to ${Math.round(
               waterAmount * 0.6
-            )}g total`,
+            )}g of total water.`,
             duration: 30,
           },
           {
-            instruction: `Pour water up to ${waterAmount}g total`,
+            instruction: `Complete pouring water up to ${waterAmount}g.`,
             duration: 30,
           },
-          { instruction: "Gently swirl the V60", duration: 15 },
-          { instruction: "Allow coffee to drawdown", duration: 10 },
+          {
+            instruction: `Stir with a spoon to remove any remaining coffee grounds of the wall. Give it a gentle swirl.`,
+            duration: 15,
+          },
+          { instruction: "Allow coffee to drawdown and enjoy!", duration: 10 },
         ],
       },
       {
         id: "v60-4-6",
-        name: "4:6 Method",
+        name: "Tetsu Kasuya's 4:6 Method",
         description:
           "A technique developed by Tetsu Kasuya, winner of the 2016 World Brewers Cup.",
         ratio: 15, // 1:15 ratio
@@ -69,18 +75,29 @@ export const brewingMethods: BrewingMethod[] = [
           const pourAmount = Math.round(waterAmount / 5);
           return [
             {
-              instruction: `Add ${coffeeAmount}g of coffee to the filter`,
+              instruction: `Add ${coffeeAmount}g of coffee to the filter.`,
               duration: 10,
             },
-            { instruction: `Pour ${pourAmount}g of water`, duration: 45 },
-            { instruction: `Pour ${pourAmount}g of water`, duration: 45 },
-            { instruction: `Pour ${pourAmount}g of water`, duration: 45 },
-            { instruction: `Pour ${pourAmount}g of water`, duration: 45 },
             {
-              instruction: `Final pour of ${pourAmount}g of water`,
+              instruction: `Pour ${pourAmount}g of water and wait 45 seconds for the coffee to bloom.`,
               duration: 45,
             },
-            { instruction: "Allow to drawdown", duration: 60 },
+            {
+              instruction: `Pour ${pourAmount}g of water and wait 45 seconds.`,
+              duration: 45,
+            },
+            {
+              instruction: `Pour ${pourAmount}g of water and wait 45 seconds.`,
+              duration: 45,
+            },
+            {
+              instruction: `Final pour of ${pourAmount}g of water and wait 45 seconds for the coffee to drawdown.`,
+              duration: 45,
+            },
+            {
+              instruction: "Allow to drawdown and enjoy!",
+              duration: 60,
+            },
           ];
         },
       },
@@ -103,11 +120,18 @@ export const brewingMethods: BrewingMethod[] = [
             instruction: `Add ${coffeeAmount}g of coarse ground coffee to the French Press`,
             duration: 10,
           },
-          { instruction: `Add ${waterAmount}g of water`, duration: 30 },
-          { instruction: "Stir gently", duration: 15 },
-          { instruction: "Place the lid on and wait", duration: 225 },
-          { instruction: "Slowly press the plunger down", duration: 30 },
-          { instruction: "Pour and enjoy!", duration: 0 },
+          {
+            instruction: `Add ${waterAmount}g of water and stir gently.`,
+            duration: 30,
+          },
+          {
+            instruction: "Place the lid on and wait 3 minutes 45 seconds.",
+            duration: 225,
+          },
+          {
+            instruction: "Slowly press the plunger down and enjoy!",
+            duration: 30,
+          },
         ],
       },
       {
@@ -119,19 +143,30 @@ export const brewingMethods: BrewingMethod[] = [
         defaultCoffeeAmount: 30,
         steps: (coffeeAmount: number, waterAmount: number) => [
           {
-            instruction: `Add ${coffeeAmount}g of medium-fine ground coffee to the French Press`,
+            instruction: `Add ${coffeeAmount}g of medium-fine ground coffee to the French Press.`,
             duration: 10,
           },
-          { instruction: `Add ${waterAmount}g of water`, duration: 30 },
-          { instruction: "Wait for 4 minutes", duration: 240 },
-          { instruction: "Stir the crust gently", duration: 15 },
-          { instruction: "Scoop out the foam", duration: 30 },
-          { instruction: "Wait for 5-8 minutes", duration: 480 },
           {
-            instruction: "Slowly press the plunger just below the surface",
+            instruction: `Add ${waterAmount}g of water in the French Press.`,
+            duration: 30,
+          },
+          {
+            instruction: "Wait for 4 minutes  for the coffee to bloom.",
+            duration: 240,
+          },
+          {
+            instruction: "Stir the crust gently and scoop out the foam.",
             duration: 15,
           },
-          { instruction: "Pour carefully and enjoy!", duration: 0 },
+          {
+            instruction: "Wait for 5-8 minutes for the coffee to drawdown.",
+            duration: 480,
+          },
+          {
+            instruction:
+              "Slowly press the plunger just below the surface and pour carefully.",
+            duration: 15,
+          },
         ],
       },
     ],

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BrewTime",
-  description: "BrewTime",
+  title: "Webrew",
+  description: "Webrew",
 };
 
 import { Geist } from "next/font/google";

@@ -48,7 +48,7 @@ export default function CoffeeAmountInput({
             value={Math.round(coffeeAmount)}
             onChange={handleCoffeeChange}
             min={1}
-            className="font-mono text-sm border-0 bg-muted"
+            className="text-sm border-0 bg-muted"
           />
         </div>
         <div>
@@ -64,7 +64,7 @@ export default function CoffeeAmountInput({
             value={Math.round(waterAmount)}
             onChange={handleWaterChange}
             min={1}
-            className="font-mono text-sm border-0 bg-muted"
+            className="text-sm border-0 bg-muted"
           />
         </div>
       </div>
