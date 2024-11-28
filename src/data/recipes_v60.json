@@ -9,7 +9,8 @@
     "water_temp": 95,
     "grind_size": "Medium fine",
     "brew_time": "3min 30s",
-    "short_description": "An easy-to-follow recipe by James Hoffmann. [Watch the tutorial video](https://www.youtube.com/watch?v=AI4ynXzkSQo).",
+    "short_description": "An easy-to-follow recipe by James Hoffmann.",
+    "tutorial_link": "https://www.youtube.com/watch?v=AI4ynXzkSQo",
     "last_used": "2023-05-01T12:00:00Z",
     "is_favorite": false,
     "steps": [
