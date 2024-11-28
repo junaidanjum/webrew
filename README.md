@@ -4,7 +4,7 @@ Webrew is a web application designed to guide coffee enthusiasts through various
 
 ## Features
 
-- **Brewing Methods**: Choose from a variety of brewing methods such as Hario V60, Chemex, Aeropress, and more.
+- **Brewing Methods**: Choose from a variety of brewing methods such as V60, French Press, Pour Over, and more. Committed to adding new techniques and methods constantly.
 - **Dynamic Recipe Adjustment**: Adjust coffee and water amounts dynamically, and the app will update the recipe steps accordingly.
 - **Step-by-Step Guide**: Follow detailed instructions for each brewing step, complete with a timer to ensure perfect brewing.
 - **Responsive Design**: The app is designed to be responsive and user-friendly on both desktop and mobile devices.
