@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Webrew - Coffee Brewing Guide
 
-## Getting Started
+Webrew is a web application designed to guide coffee enthusiasts through various brewing methods. It provides step-by-step instructions for brewing coffee using different techniques, allowing users to customize coffee and water amounts based on their preferences.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Brewing Methods**: Choose from a variety of brewing methods such as Hario V60, Chemex, Aeropress, and more.
+- **Dynamic Recipe Adjustment**: Adjust coffee and water amounts dynamically, and the app will update the recipe steps accordingly.
+- **Step-by-Step Guide**: Follow detailed instructions for each brewing step, complete with a timer to ensure perfect brewing.
+- **Responsive Design**: The app is designed to be responsive and user-friendly on both desktop and mobile devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Select a Brewing Method**: Choose your preferred brewing method from the dropdown menu.
+2. **Adjust Coffee and Water Amounts**: Use the input fields to set your desired coffee and water amounts. The app will automatically adjust the recipe steps.
+3. **Follow the Brewing Guide**: Start the timer and follow the step-by-step instructions to brew your coffee.
+4. **Pause, Reset, or Skip Steps**: Use the controls to pause, reset, or skip steps as needed.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Special thanks to all the coffee experts for their recipes and brewing techniques.
+- Icons provided by [Lucide](https://lucide.dev/).
