@@ -321,4 +321,70 @@ export const brewingMethods: BrewingMethod[] = [
       },
     ],
   },
+  {
+    id: "aeropress",
+    name: "Aeropress",
+    description:
+      "A versatile brewing method that offers various flavor profiles depending on the technique used.",
+    techniques: [
+      {
+        id: "standard",
+        name: "Standard Method",
+        description:
+          "Brewing with the Aeropress in its traditional orientation.",
+        ratio: 15,
+        defaultCoffeeAmount: 15,
+        steps: (coffeeAmount: number, waterAmount: number): BrewingStep[] => [
+          {
+            instruction: `Add ${coffeeAmount}g of coffee to the Aeropress.`,
+            duration: 10,
+          },
+          {
+            instruction: `Pour ${waterAmount}ml of water at 85°C into the Aeropress.`,
+            duration: 30,
+          },
+          {
+            instruction: "Stir the mixture for 10 seconds.",
+            duration: 10,
+          },
+          {
+            instruction:
+              "Place the plunger and press down slowly for about 30 seconds.",
+            duration: 30,
+          },
+        ],
+      },
+      {
+        id: "inverted",
+        name: "Inverted Method",
+        description:
+          "Brewing with the Aeropress flipped upside down, allowing for longer steep times.",
+        ratio: 16,
+        defaultCoffeeAmount: 18,
+        steps: (coffeeAmount: number, waterAmount: number): BrewingStep[] => [
+          {
+            instruction: `Add ${coffeeAmount}g of coffee to the inverted Aeropress.`,
+            duration: 10,
+          },
+          {
+            instruction: `Pour ${waterAmount}ml of water at 90°C into the Aeropress.`,
+            duration: 30,
+          },
+          {
+            instruction: "Stir the mixture for 15 seconds.",
+            duration: 15,
+          },
+          {
+            instruction: "Let the coffee steep for 1 minute.",
+            duration: 60,
+          },
+          {
+            instruction:
+              "Flip the Aeropress onto your cup and press down slowly for about 30 seconds.",
+            duration: 30,
+          },
+        ],
+      },
+    ],
+  },
 ];
