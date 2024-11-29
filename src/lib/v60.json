@@ -30,5 +30,75 @@
 			{ "instruction": "Final pour of {waterAmount/5}g of water and wait 45 seconds for the coffee to drawdown.", "duration": 45 },
 			{ "instruction": "Allow to drawdown and enjoy!", "duration": 60 }
 		]
+	},
+	{
+		"id": "v60-scott-rao",
+		"name": "Scott Rao classic V60 recipe",
+		"description": "Scott Rao's V60 recipe focuses on even extraction and a consistent brew.",
+		"ratio": 16.36,
+		"defaultCoffeeAmount": 22,
+		"steps": [
+			{ "instruction": "Rinse filter & pre-heat V60, Pour in grounds, flatten", "duration": 10 },
+			{ "instruction": "Pre-wet with {3 * coffeeAmount}g of water.", "duration": 15 },
+			{ "instruction": "Gently excavate to wet all the grounds", "duration": 10 },
+			{ "instruction": "Let the coffee bloom.", "duration": 20 },
+			{ "instruction": "At 45s, start main pour until {waterAmount}g.", "duration": 50 },
+			{ "instruction": "Gently stir to stop grounds from clinging to sides", "duration": 25 },
+			{ "instruction": "Swirl V60 to flatten coffee bed for even brew", "duration": 10 },
+			{ "instruction": "Drawdown should be complete within 3 minutes.", "duration": 50 }
+		]
+	},
+	{
+		"id": "v60-hedrick",
+		"name": "Lance Hedrick's ultimate flash brew",
+		"description": "Lance Hedrick's ultimate flash brew.",
+		"ratio": 12,
+		"defaultCoffeeAmount": 20,
+		"steps": [
+			{ "instruction": "Rinse filter & pre-heat V60, Pour in grounds, flatten", "duration": 10 },
+			{ "instruction": "Bloom with {0.25 * waterAmount}g of water.", "duration": 60 },
+			{ "instruction": "Pour {0.375 * waterAmount}g of water.", "duration": 45 },
+			{ "instruction": "Pour {0.375 * waterAmount}g again and swirl gently. Wait until completely drained.", "duration": 45 },
+			{ "instruction": "Add {0.25 * waterAmount}g of ice and stir until cooled to 5-10°C", "duration": 30 },
+			{ "instruction": "Serve over fresh ice cubes", "duration": 25 }
+		]
+	},
+	{
+		"id": "104",
+		"name": "James Hoffmann Iced V60 recipe",
+		"description": "James Hoffmann's take on iced filter coffee.",
+		"ratio": 16.67,
+		"defaultCoffeeAmount": 32.5,
+		"steps": [
+			{
+				"instruction": "Rinse filter above the sink to avoid heating the server. Pour in coffee grounds. Place {0.4 * waterAmount}g of ice in the server. Place on the scale and zero it out.",
+				"duration": 10
+			},
+			{ "instruction": "Pre-wet with {3 * coffeeAmount}g of water.", "duration": 10 },
+			{ "instruction": "Stir a little and let the coffee bloom.", "duration": 30 },
+			{ "instruction": "Slowly pour till {0.6 * waterAmount}g. of water.", "duration": 105 },
+			{ "instruction": "Stir once clockwise and anticlockwise.", "duration": 10 },
+			{ "instruction": "Swirl the server to melt the ice. Pour over fresh ice cubes in the glass.", "duration": 15 }
+		]
+	},
+	{
+		"id": "105",
+		"name": "James Hoffmann V60 - One cup recipe",
+		"description": "James Hoffmann's recipe for one-cup V60.",
+		"ratio": 16.67,
+		"defaultCoffeeAmount": 15,
+		"steps": [
+			{ "instruction": "Rinse filter & pre-heat V60. Pour in grounds.", "duration": 10 },
+			{ "instruction": "Pre-wet with {0.2 * waterAmount}g of water.", "duration": 10 },
+			{ "instruction": "Gently swirl the V60 and let the coffee bloom.", "duration": 30 },
+			{ "instruction": "Pour up to {0.4 * waterAmount}g. total.", "duration": 15 },
+			{ "instruction": "Wait for 10 seconds.", "duration": 10 },
+			{ "instruction": "Pour up to {0.6 * waterAmount}g. total.", "duration": 10 },
+			{ "instruction": "Wait for 10 seconds.", "duration": 10 },
+			{ "instruction": "Pour up to {0.8 * waterAmount}g. total.", "duration": 10 },
+			{ "instruction": "Wait for 10 seconds.", "duration": 10 },
+			{ "instruction": "Pour up to {waterAmount}g. total.", "duration": 10 },
+			{ "instruction": "Gently swirl and wait for the complete drawdown.", "duration": 55 }
+		]
 	}
 ]
