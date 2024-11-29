@@ -1,0 +1,59 @@
+[
+  {
+    "id": "aero-1",
+    "name": "Tim Wendelboe Aeropress recipe",
+    "description": "A recipe by Tim Wendelboe, World Barista Champion.",
+    "ratio": 16,
+    "defaultCoffeeAmount": 15,
+    "steps": [
+      { "instruction": "Rinse the paper filter thoroughly with tap water, then pour in the coffee grounds.", "duration": 10 },
+      { "instruction": "Slowly pour {waterAmount}g of hot water over the coffee grounds in a circular motion.", "duration": 10 },
+      { "instruction": "Stir the coffee gently 3 times to ensure all grounds are wet.", "duration": 10 },
+      { "instruction": "Place the plunger on top and let the coffee steep for a minute.", "duration": 60 },
+      { "instruction": "Stir 3 more times from back to front to redistribute the grounds.", "duration": 10 },
+      { "instruction": "Press the coffee into a cup using steady pressure and body weight.", "duration": 20 }
+    ]
+  },
+  {
+    "id": "aero-2",
+    "name": "James Hoffmann Aeropress recipe",
+    "description": "A recipe by James Hoffmann, World Barista Champion.",
+    "ratio": 16,
+    "defaultCoffeeAmount": 15,
+    "steps": [
+      { "instruction": "Rinse the paper filter thoroughly with tap water, then add the coffee grounds.", "duration": 10 },
+      { "instruction": "Carefully pour {waterAmount}g of water over the coffee grounds.", "duration": 10 },
+      { "instruction": "Place the plunger just 1cm into the brewer to create a seal.", "duration": 5 },
+      { "instruction": "Let the coffee brew for 2 minutes without disturbing it.", "duration": 120 },
+      { "instruction": "Gently swirl the Aeropress to agitate the coffee.", "duration": 10 },
+      { "instruction": "Allow the coffee to settle for 30 more seconds.", "duration": 30 },
+      { "instruction": "Press down gently and steadily all the way to extract the coffee.", "duration": 30 }
+    ]
+  },
+  {
+    "id": "aero-3",
+    "name": "Alan Adler Aeropress recipe",
+    "description": "A recipe by Alan Adler, the inventor of Aeropress.",
+    "ratio": 16,
+    "defaultCoffeeAmount": 15,
+    "steps": [
+      { "instruction": "Add the ground coffee to the chamber, then shake it to level the coffee bed.", "duration": 0 },
+      { "instruction": "Pour {waterAmount}g of hot water into the chamber slowly and evenly.", "duration": 10 },
+      { "instruction": "Use the paddle to stir the coffee thoroughly to ensure even extraction.", "duration": 10 },
+      { "instruction": "Insert the plunger and press down gently until all the coffee is extracted.", "duration": 40 }
+    ]
+  },
+  {
+    "id": "aero-4",
+    "name": "Wendelien van Bunnik Aeropress recipe",
+    "description": "A recipe by Wendelien van Bunnik, 2019 World AeroPress Champion.",
+    "ratio": 16,
+    "defaultCoffeeAmount": 15,
+    "steps": [
+      { "instruction": "Add the ground coffee to the Aeropress and shake it to create a flat coffee bed.", "duration": 0 },
+      { "instruction": "Pour {waterAmount}g of hot water evenly into the chamber over the coffee.", "duration": 10 },
+      { "instruction": "Stir the coffee 5 times quickly to ensure even saturation.", "duration": 10 },
+      { "instruction": "Let the coffee sit for a while, then flip the Aeropress and press steadily.", "duration": 70 }
+    ]
+  }
+]
