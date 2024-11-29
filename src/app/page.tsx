@@ -26,6 +26,8 @@ export default function CoffeeBrewingApp() {
 					setSelectedMethod(method)
 					const technique = method.techniques.find(t => t.id === storedTechnique)
 					setSelectedTechnique(technique || method.techniques[0])
+					setCoffeeAmount(technique ? technique.defaultCoffeeAmount : method.techniques[0].defaultCoffeeAmount)
+					setWaterAmount(technique ? technique.ratio * technique.defaultCoffeeAmount : method.techniques[0].ratio * method.techniques[0].defaultCoffeeAmount)
 				}
 			}
 		}
