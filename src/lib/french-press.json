@@ -26,5 +26,23 @@
 			{ "instruction": "Wait for 5-8 minutes for the coffee to drawdown.", "duration": 480 },
 			{ "instruction": "Slowly press the plunger just below the surface and pour carefully.", "duration": 15 }
 		]
+	},
+	{
+		"id": "402",
+		"name": "Gwilym Davies French Press recipe",
+		"description": "French press recipe by Gwilym Davies, World barista champion and SCA authorized trainer.",
+		"ratio": 16.67,
+		"defaultCoffeeAmount": 16,
+		"steps": [
+			{ "instruction": "Grind the coffee and put it into French Press. Place on scale and zero it out.", "duration": 10 },
+			{ "instruction": "Quickly add {waterAmount}g of water.", "duration": 10 },
+			{ "instruction": "Wait 5 minutes.", "duration": 300 },
+			{ "instruction": "Use a tablespoon to mix coffee with water.", "duration": 10 },
+			{ "instruction": "Insert the plunger, but don't press it down yet.", "duration": 5 },
+			{ "instruction": "Wait 3 minutes.", "duration": 180 },
+			{ "instruction": "Press the plunger down slowly.", "duration": 20 },
+			{ "instruction": "Wait 2 minutes.", "duration": 120 },
+			{ "instruction": "Pour the coffee into the carafe and wait for another 2 minutes before serving.", "duration": 120 }
+		]
 	}
 ]
