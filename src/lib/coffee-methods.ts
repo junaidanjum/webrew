@@ -36,7 +36,7 @@ const renderInstruction = (instruction: string, variables: Record<string, number
 				}
 				return v
 			})
-		)
+		).toFixed(0)
 	})
 }
 
