@@ -2,6 +2,7 @@ import v60Techniques from "./v60.json"
 import frenchPressTechniques from "./french-press.json"
 import chemexTechniques from "./chemex.json"
 import origamiTechniques from "./origami.json"
+import cleverTechniques from "./clever.json"
 export interface BrewingStep {
 	instruction: string
 	duration: number // in seconds
@@ -96,6 +97,23 @@ export const brewingMethods: BrewingMethod[] = [
 		name: "Origami",
 		description: "A dripper that folds like an origami crane.",
 		techniques: origamiTechniques.map(technique => ({
+			...technique,
+			steps: (coffeeAmount: number, waterAmount: number) => {
+				return technique.steps.map(step => ({
+					...step,
+					instruction: renderInstruction(step.instruction, {
+						coffeeAmount,
+						waterAmount
+					})
+				}))
+			}
+		}))
+	},
+	{
+		id: "clever",
+		name: "Clever",
+		description: "Clever Dripper is a pour-over dripper that uses a paper filter.",
+		techniques: cleverTechniques.map(technique => ({
 			...technique,
 			steps: (coffeeAmount: number, waterAmount: number) => {
 				return technique.steps.map(step => ({

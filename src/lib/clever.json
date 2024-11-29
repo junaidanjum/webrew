@@ -1,0 +1,68 @@
+[
+	{
+		"id": "clever-1",
+		"name": "James Hoffmann Ultimate Clever Dripper recipe",
+		"description": "A recipe by James Hoffmann, winner of World barista Championship, YouTuber, coffee consultant, and author.",
+		"ratio": 16.67,
+		"defaultCoffeeAmount": 15,
+		"steps": [
+			{
+				"instruction": "Insert the paper filter into Clever Dripper and rinse it with water. Grind the coffee, but don't put into Clever Dripper yet. Place on scale and zero it out. Get a spoon.",
+				"duration": 10
+			},
+			{ "instruction": "Add {coffeeAmount}g of water to the Clever Dripper", "duration": 10 },
+			{ "instruction": "Put the coffee in the water and stir it a little with a spoon.", "duration": 10 },
+			{ "instruction": "Let the coffee steep for 2 minutes.", "duration": 120 },
+			{ "instruction": "Stir with a spoon or shake the brewer a little to break the crust.", "duration": 10 },
+			{ "instruction": "Place the Clever Dripper on a server and wait for the complete drawdown.", "duration": 60 }
+		]
+	},
+	{
+		"id": "clever-2",
+		"name": "Clever Dripper recipe by European Coffee Trip",
+		"description": "Clever Dripper recipe by Youtube channel European Coffee Trip.",
+		"ratio": 16.67,
+		"defaultCoffeeAmount": 20,
+		"steps": [
+			{ "instruction": "Place the paper filter into the Clever dripper, rinse it with hot water. Grind the coffee and put the grounds in the brewer.", "duration": 10 },
+			{ "instruction": "Add {waterAmount}g of water to the brewer.", "duration": 10 },
+			{ "instruction": "Wait 2 minutes.", "duration": 120 },
+			{ "instruction": "Gently break the crust on the top with spoon.", "duration": 10 },
+			{ "instruction": "Wait another 2 minutes.", "duration": 120 },
+			{ "instruction": "Place the clever Dripper on the carafe and let the coffee drain.", "duration": 60 }
+		]
+	},
+	{
+		"id": "clever-3",
+		"name": "Clever Dripper recipe by Coffee and Water",
+		"description": "Clever Dripper recipe by Youtube channel Coffee and Water.",
+		"ratio": 16.67,
+		"defaultCoffeeAmount": 28,
+		"steps": [
+			{ "instruction": "Place the paper filter into the Clever dripper, rinse it with hot water. Grind the coffee and put the grounds in the brewer.", "duration": 10 },
+			{ "instruction": "Add {waterAmount}g of water to the brewer.", "duration": 10 },
+			{ "instruction": "Let the coffee steep.", "duration": 50 },
+			{ "instruction": "Break the crust on the top of the brew with spoon, stirring 3 times.", "duration": 10 },
+			{ "instruction": "Let the coffee steep.", "duration": 80 },
+			{ "instruction": "Place your clever Dripper on the carafe and let the coffee drain.", "duration": 60 }
+		]
+	},
+	{
+		"id": "clever-4",
+		"name": "James Hoffmann Iced Clever Dripper recipe",
+		"description": "A recipe by James Hoffmann, World Barista Champion.",
+		"ratio": 16.67,
+		"defaultCoffeeAmount": 37.5,
+		"steps": [
+			{
+				"instruction": "Insert the paper filter into Clever Dripper and rinse it with water. Grind the coffee, but don't put into Clever Dripper yet. Place on scale and zero it out. Get a spoon. You'll need (0.34 x {waterAmount})g of ice, but keep it in the freezer for now.",
+				"duration": 10
+			},
+			{ "instruction": "Add (0.66 x {waterAmount})g. of water to the Clever Dripper", "duration": 10 },
+			{ "instruction": "Put the coffee in the water and stir it with a spoon, making sure that all the coffee is wet.", "duration": 10 },
+			{ "instruction": "Let the coffee steep. When the steep time is almost over, place (0.34 x {waterAmount})g of ice into the server.", "duration": 300 },
+			{ "instruction": "Place the Clever Dripper on a server and wait for the complete drawdown.", "duration": 60 },
+			{ "instruction": "Swirl the server or stir with a spoon to dilute the remaining ice. Optional: add a few drops of saline to reduce bitterness.", "duration": 15 }
+		]
+	}
+]
