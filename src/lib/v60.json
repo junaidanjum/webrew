@@ -1,0 +1,34 @@
+[
+	{
+		"id": "v60-hoffman",
+		"name": "James Hoffmann's Ultimate V60",
+		"description": "A meticulously crafted pour-over method by coffee expert James Hoffmann.",
+		"ratio": 16.67,
+		"defaultCoffeeAmount": 30,
+		"steps": [
+			{ "instruction": "Add {coffeeAmount}g of coffee to v60 filter.", "duration": 10 },
+			{ "instruction": "Add {coffeeAmount*2}g of water to wet the coffee evenly. Wait for 45 seconds for the coffee to bloom.", "duration": 45 },
+			{ "instruction": "Gently swirl the coffee slurry to ensure even saturation.", "duration": 15 },
+			{ "instruction": "Pour water up to {waterAmount*0.6}g of total water.", "duration": 30 },
+			{ "instruction": "Complete pouring water up to {waterAmount}g.", "duration": 30 },
+			{ "instruction": "Stir with a spoon to remove any remaining coffee grounds of the wall. Give it a gentle swirl.", "duration": 15 },
+			{ "instruction": "Allow coffee to drawdown and enjoy!", "duration": 10 }
+		]
+	},
+	{
+		"id": "v60-4-6",
+		"name": "Tetsu Kasuya's 4:6 Method",
+		"description": "A technique developed by Tetsu Kasuya, winner of the 2016 World Brewers Cup.",
+		"ratio": 15,
+		"defaultCoffeeAmount": 20,
+		"steps": [
+			{ "instruction": "Add {coffeeAmount}g of coffee to the filter.", "duration": 10 },
+			{ "instruction": "Pour {waterAmount/5}g of water and wait 45 seconds for the coffee to bloom.", "duration": 45 },
+			{ "instruction": "Pour {waterAmount/5}g of water and wait 45 seconds.", "duration": 45 },
+			{ "instruction": "Pour {waterAmount/5}g of water and wait 45 seconds.", "duration": 45 },
+			{ "instruction": "Pour {waterAmount/5}g of water and wait 45 seconds.", "duration": 45 },
+			{ "instruction": "Final pour of {waterAmount/5}g of water and wait 45 seconds for the coffee to drawdown.", "duration": 45 },
+			{ "instruction": "Allow to drawdown and enjoy!", "duration": 60 }
+		]
+	}
+]
