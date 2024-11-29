@@ -1,6 +1,6 @@
 [
 	{
-		"id": "origami-101",
+		"id": "origami-1",
 		"name": "Alexander Mills Origami Dripper recipe",
 		"description": "Origami Dripper recipe by Alexander Mills, a consultant in the coffee industry and dedicated home brewer. Note that this recipe uses Kalita Coffee filters.",
 		"ratio": 16,
@@ -17,7 +17,7 @@
 		]
 	},
 	{
-		"id": "origami-802",
+		"id": "origami-2",
 		"name": "Jia Ning Du Origami Dripper recipe",
 		"description": "Origami Dripper recipe by Jia Ning Du, the first Chinese barista who won World Brewers Cup (WBrC). This is her winning recipe.",
 		"ratio": 15,
@@ -33,7 +33,7 @@
 		]
 	},
 	{
-		"id": "origami-803",
+		"id": "origami-3",
 		"name": "Carlos Medina's Origami Dripper recipe",
 		"description": "Origami Dripper recipe by Carlos Medina from Chile, who won World Brewers Cup with it in 2023.",
 		"ratio": 16.67,

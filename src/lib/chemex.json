@@ -1,6 +1,6 @@
 [
 	{
-		"id": "301",
+		"id": "chemex-1",
 		"name": "James Hoffmann Chemex recipe",
 		"description": "Chemex recipe by James Hoffmann, winner of World Barista Championship, YouTuber, coffee consultant, and author. James recommends almost the same technique as for V60.",
 		"ratio": 16.666666666666668,
@@ -17,7 +17,7 @@
 		]
 	},
 	{
-		"id": "302",
+		"id": "chemex-2",
 		"name": "Chemex recipe by Caffeine Fiend",
 		"description": "Chemex recipe by Caffeine Fiend.",
 		"ratio": 15,
@@ -32,7 +32,7 @@
 		]
 	},
 	{
-		"id": "303",
+		"id": "chemex-3",
 		"name": "Chemex recipe by Epicurious",
 		"description": "Chemex recipe by Epicurious.",
 		"ratio": 16.666666666666668,
@@ -49,7 +49,7 @@
 		]
 	},
 	{
-		"id": "304",
+		"id": "chemex-4",
 		"name": "Scott Rao Chemex recipe",
 		"description": "Chemex recipe by Scott Rao, a coffee expert and author specializing in barista training, coffee roasting, and brewing.",
 		"ratio": 17,

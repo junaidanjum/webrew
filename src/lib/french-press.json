@@ -1,6 +1,6 @@
 [
 	{
-		"id": "french-press-classic",
+		"id": "french-press-1",
 		"name": "Classic French Press",
 		"description": "A simple and robust method for full-bodied coffee.",
 		"ratio": 15,
@@ -13,7 +13,7 @@
 		]
 	},
 	{
-		"id": "french-press-hoffman",
+		"id": "french-press-2",
 		"name": "James Hoffmann's French Press Technique",
 		"description": "A refined method that aims to reduce sediment in the final cup.",
 		"ratio": 16.67,
@@ -28,7 +28,7 @@
 		]
 	},
 	{
-		"id": "402",
+		"id": "french-press-3",
 		"name": "Gwilym Davies French Press recipe",
 		"description": "French press recipe by Gwilym Davies, World barista champion and SCA authorized trainer.",
 		"ratio": 16.67,

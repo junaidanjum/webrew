@@ -1,6 +1,6 @@
 [
 	{
-		"id": "v60-hoffman",
+		"id": "v60-1",
 		"name": "James Hoffmann's Ultimate V60",
 		"description": "A meticulously crafted pour-over method by coffee expert James Hoffmann.",
 		"ratio": 16.67,
@@ -16,7 +16,7 @@
 		]
 	},
 	{
-		"id": "v60-4-6",
+		"id": "v60-2",
 		"name": "Tetsu Kasuya's 4:6 Method",
 		"description": "A technique developed by Tetsu Kasuya, winner of the 2016 World Brewers Cup.",
 		"ratio": 15,
@@ -32,7 +32,7 @@
 		]
 	},
 	{
-		"id": "v60-scott-rao",
+		"id": "v60-3",
 		"name": "Scott Rao classic V60 recipe",
 		"description": "Scott Rao's V60 recipe focuses on even extraction and a consistent brew.",
 		"ratio": 16.36,
@@ -49,7 +49,7 @@
 		]
 	},
 	{
-		"id": "v60-hedrick",
+		"id": "v60-4",
 		"name": "Lance Hedrick's ultimate flash brew",
 		"description": "Lance Hedrick's ultimate flash brew.",
 		"ratio": 12,
@@ -64,7 +64,7 @@
 		]
 	},
 	{
-		"id": "104",
+		"id": "v60-5",
 		"name": "James Hoffmann Iced V60 recipe",
 		"description": "James Hoffmann's take on iced filter coffee.",
 		"ratio": 16.67,
@@ -82,7 +82,7 @@
 		]
 	},
 	{
-		"id": "105",
+		"id": "v60-6",
 		"name": "James Hoffmann V60 - One cup recipe",
 		"description": "James Hoffmann's recipe for one-cup V60.",
 		"ratio": 16.67,
