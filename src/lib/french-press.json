@@ -6,10 +6,10 @@
 		"ratio": 15,
 		"defaultCoffeeAmount": 30,
 		"steps": [
-			{ "instruction": "Add {coffeeAmount}g of coarse ground coffee to the French Press", "duration": 10 },
+			{ "instruction": "Add {coffeeAmount}g of coarse ground coffee to the French Press.", "duration": 10 },
 			{ "instruction": "Add {waterAmount}g of water and stir gently.", "duration": 30 },
-			{ "instruction": "Place the lid on and wait 3 minutes 45 seconds.", "duration": 225 },
-			{ "instruction": "Slowly press the plunger down and enjoy!", "duration": 30 }
+			{ "instruction": "Place the lid on and wait for 4 minutes.", "duration": 240 },
+			{ "instruction": "Slowly press the plunger down and enjoy the coffee!", "duration": 30 }
 		]
 	},
 	{
@@ -20,10 +20,10 @@
 		"defaultCoffeeAmount": 30,
 		"steps": [
 			{ "instruction": "Add {coffeeAmount}g of medium-fine ground coffee to the French Press.", "duration": 10 },
-			{ "instruction": "Add {waterAmount}g of water in the French Press.", "duration": 30 },
-			{ "instruction": "Wait for 4 minutes  for the coffee to bloom.", "duration": 240 },
+			{ "instruction": "Add {waterAmount}g of water to the French Press.", "duration": 30 },
+			{ "instruction": "Wait for 30-45 seconds for the coffee to bloom.", "duration": 45 },
 			{ "instruction": "Stir the crust gently and scoop out the foam.", "duration": 15 },
-			{ "instruction": "Wait for 5-8 minutes for the coffee to drawdown.", "duration": 480 },
+			{ "instruction": "Wait for another 3 minutes for the coffee to steep.", "duration": 180 },
 			{ "instruction": "Slowly press the plunger just below the surface and pour carefully.", "duration": 15 }
 		]
 	},
@@ -34,15 +34,13 @@
 		"ratio": 16.67,
 		"defaultCoffeeAmount": 16,
 		"steps": [
-			{ "instruction": "Grind the coffee and put it into French Press. Place on scale and zero it out.", "duration": 10 },
+			{ "instruction": "Grind the coffee and put it into the French Press. Place on scale and zero it out.", "duration": 10 },
 			{ "instruction": "Quickly add {waterAmount}g of water.", "duration": 10 },
-			{ "instruction": "Wait 5 minutes.", "duration": 300 },
-			{ "instruction": "Use a tablespoon to mix coffee with water.", "duration": 10 },
-			{ "instruction": "Insert the plunger, but don't press it down yet.", "duration": 5 },
-			{ "instruction": "Wait 3 minutes.", "duration": 180 },
-			{ "instruction": "Press the plunger down slowly.", "duration": 20 },
-			{ "instruction": "Wait 2 minutes.", "duration": 120 },
-			{ "instruction": "Pour the coffee into the carafe and wait for another 2 minutes before serving.", "duration": 120 }
+			{ "instruction": "Wait for 5 minutes for the coffee to steep.", "duration": 300 },
+			{ "instruction": "Use a tablespoon to stir the coffee and water mixture.", "duration": 10 },
+			{ "instruction": "Insert the plunger, but don’t press it down yet.", "duration": 5 },
+			{ "instruction": "Press the plunger down slowly immediately after stirring.", "duration": 20 },
+			{ "instruction": "Pour the coffee into the carafe and serve immediately.", "duration": 10 }
 		]
 	}
 ]
