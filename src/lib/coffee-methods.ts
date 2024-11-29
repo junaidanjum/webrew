@@ -1,7 +1,7 @@
 import v60Techniques from "./v60.json"
 import frenchPressTechniques from "./french-press.json"
 import chemexTechniques from "./chemex.json"
-
+import origamiTechniques from "./origami.json"
 export interface BrewingStep {
 	instruction: string
 	duration: number // in seconds
@@ -79,6 +79,23 @@ export const brewingMethods: BrewingMethod[] = [
 		name: "Chemex",
 		description: "A pour-over style glass coffeemaker.",
 		techniques: chemexTechniques.map(technique => ({
+			...technique,
+			steps: (coffeeAmount: number, waterAmount: number) => {
+				return technique.steps.map(step => ({
+					...step,
+					instruction: renderInstruction(step.instruction, {
+						coffeeAmount,
+						waterAmount
+					})
+				}))
+			}
+		}))
+	},
+	{
+		id: "origami",
+		name: "Origami",
+		description: "A dripper that folds like an origami crane.",
+		techniques: origamiTechniques.map(technique => ({
 			...technique,
 			steps: (coffeeAmount: number, waterAmount: number) => {
 				return technique.steps.map(step => ({

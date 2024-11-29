@@ -1,0 +1,55 @@
+[
+	{
+		"id": "origami-101",
+		"name": "Alexander Mills Origami Dripper recipe",
+		"description": "Origami Dripper recipe by Alexander Mills, a consultant in the coffee industry and dedicated home brewer. Note that this recipe uses Kalita Coffee filters.",
+		"ratio": 16,
+		"defaultCoffeeAmount": 12.5,
+		"steps": [
+			{ "instruction": "Grind {coffeeAmount}g of coffee, pre-rinse filter with hot water, and add coffee grounds. Place dripper on scales and zero out.", "duration": 10 },
+			{ "instruction": "Bloom coffee with {0.2 * waterAmount}g of water and agitate with a few gentle swirls of the dripper.", "duration": 10 },
+			{ "instruction": "Let the coffee bloom for 30 seconds.", "duration": 30 },
+			{
+				"instruction": "Pour water in slow, concentric circles until you reach {waterAmount}g, finishing with the last pour around the outside of the filter. Gently swirl the brewer one more time.",
+				"duration": 50
+			},
+			{ "instruction": "Wait for the complete drawdown.", "duration": 30 }
+		]
+	},
+	{
+		"id": "origami-802",
+		"name": "Jia Ning Du Origami Dripper recipe",
+		"description": "Origami Dripper recipe by Jia Ning Du, the first Chinese barista who won World Brewers Cup (WBrC). This is her winning recipe.",
+		"ratio": 15,
+		"defaultCoffeeAmount": 16,
+		"steps": [
+			{ "instruction": "Rinse filter and brewer with hot water. Grind {coffeeAmount}g of coffee. Pour in grounds and zero out the scales.", "duration": 10 },
+			{ "instruction": "Pour {0.25 * waterAmount}g of water for the bloom.", "duration": 10 },
+			{ "instruction": "Wait for 8 seconds.", "duration": 8 },
+			{ "instruction": "Pour up to {0.5835 * waterAmount}g of water.", "duration": 20 },
+			{ "instruction": "Wait for 18 seconds.", "duration": 18 },
+			{ "instruction": "Complete the pour to reach {waterAmount}g.", "duration": 20 },
+			{ "instruction": "Wait for the complete drawdown.", "duration": 30 }
+		]
+	},
+	{
+		"id": "origami-803",
+		"name": "Carlos Medina's Origami Dripper recipe",
+		"description": "Origami Dripper recipe by Carlos Medina from Chile, who won World Brewers Cup with it in 2023.",
+		"ratio": 16.67,
+		"defaultCoffeeAmount": 15.5,
+		"steps": [
+			{ "instruction": "Rinse Origami dripper and filter with hot water. Grind {coffeeAmount}g of coffee. Pour in grounds and zero out the scales.", "duration": 10 },
+			{ "instruction": "Bloom with {0.2 * waterAmount}g of water.", "duration": 10 },
+			{ "instruction": "Wait for 20 seconds.", "duration": 20 },
+			{ "instruction": "Pour up to {0.4 * waterAmount}g of water.", "duration": 10 },
+			{ "instruction": "Wait for 20 seconds.", "duration": 20 },
+			{ "instruction": "Pour up to {0.6 * waterAmount}g of water.", "duration": 10 },
+			{ "instruction": "Wait for 20 seconds.", "duration": 20 },
+			{ "instruction": "Pour up to {0.8 * waterAmount}g of water.", "duration": 10 },
+			{ "instruction": "Wait for 20 seconds.", "duration": 20 },
+			{ "instruction": "Pour up to {waterAmount}g of water.", "duration": 10 },
+			{ "instruction": "Wait for the complete drawdown.", "duration": 40 }
+		]
+	}
+]
