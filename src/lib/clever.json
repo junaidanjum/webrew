@@ -55,12 +55,12 @@
 		"defaultCoffeeAmount": 37.5,
 		"steps": [
 			{
-				"instruction": "Insert the paper filter into Clever Dripper and rinse it with water. Grind the coffee, but don't put into Clever Dripper yet. Place on scale and zero it out. Get a spoon. You'll need (0.34 x {waterAmount})g of ice, but keep it in the freezer for now.",
+				"instruction": "Insert the paper filter into Clever Dripper and rinse it with water. Grind the coffee, but don't put into Clever Dripper yet. Place on scale and zero it out. Get a spoon. You'll need {0.34 * waterAmount}g of ice, but keep it in the freezer for now.",
 				"duration": 10
 			},
-			{ "instruction": "Add (0.66 x {waterAmount})g. of water to the Clever Dripper", "duration": 10 },
+			{ "instruction": "Add {0.66 * waterAmount}g. of water to the Clever Dripper", "duration": 10 },
 			{ "instruction": "Put the coffee in the water and stir it with a spoon, making sure that all the coffee is wet.", "duration": 10 },
-			{ "instruction": "Let the coffee steep. When the steep time is almost over, place (0.34 x {waterAmount})g of ice into the server.", "duration": 300 },
+			{ "instruction": "Let the coffee steep. When the steep time is almost over, place {0.34 * waterAmount}g of ice into the server.", "duration": 300 },
 			{ "instruction": "Place the Clever Dripper on a server and wait for the complete drawdown.", "duration": 60 },
 			{ "instruction": "Swirl the server or stir with a spoon to dilute the remaining ice. Optional: add a few drops of saline to reduce bitterness.", "duration": 15 }
 		]
