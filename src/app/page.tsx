@@ -7,6 +7,7 @@ import BrewingGuide from "@/components/brewing-guide"
 import CoffeeAmountInput from "@/components/coffee-amount-input"
 import { Coffee, Loader } from "lucide-react"
 import Footer from "@/components/footer"
+import MenuBar from "@/components/menu-bar"
 
 export default function CoffeeBrewingApp() {
 	const [selectedMethod, setSelectedMethod] = useState<BrewingMethod>(brewingMethods[0])
@@ -67,16 +68,19 @@ export default function CoffeeBrewingApp() {
 					<h1 className="text-2xl mb-16 text-center tracking-tight items-center flex justify-center gap-2">
 						<Coffee strokeWidth={1.5} /> webrew
 					</h1>
-					<div className="max-w-xl mx-auto space-y-8">
-						<MethodSelection
-							methods={brewingMethods}
-							selectedMethod={selectedMethod}
-							selectedTechnique={selectedTechnique}
-							onSelectMethod={handleMethodChange}
-							onSelectTechnique={handleTechniqueChange}
-						/>
-						<CoffeeAmountInput coffeeAmount={coffeeAmount} setCoffeeAmount={setCoffeeAmount} waterAmount={waterAmount} setWaterAmount={setWaterAmount} ratio={selectedTechnique.ratio} />
-						<BrewingGuide technique={selectedTechnique} coffeeAmount={coffeeAmount} />
+					<div className="max-w-xl mx-auto flex">
+						<MenuBar />
+						<div className="w-full space-y-8">
+							<MethodSelection
+								methods={brewingMethods}
+								selectedMethod={selectedMethod}
+								selectedTechnique={selectedTechnique}
+								onSelectMethod={handleMethodChange}
+								onSelectTechnique={handleTechniqueChange}
+							/>
+							<CoffeeAmountInput coffeeAmount={coffeeAmount} setCoffeeAmount={setCoffeeAmount} waterAmount={waterAmount} setWaterAmount={setWaterAmount} ratio={selectedTechnique.ratio} />
+							<BrewingGuide technique={selectedTechnique} coffeeAmount={coffeeAmount} />
+						</div>
 					</div>
 				</div>
 			)}
