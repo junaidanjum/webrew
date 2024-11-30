@@ -64,7 +64,7 @@ export default function CoffeeBrewingApp() {
 				</div>
 			) : (
 				<div>
-					<h1 className="text-2xl mb-16 text-center tracking-tight items-center flex justify-center gap-2">
+					<h1 className="text-2xl mb-8 text-center tracking-tight items-center flex justify-center gap-2 font-normal">
 						<Coffee strokeWidth={1.5} /> webrew
 					</h1>
 					<div className="max-w-xl mx-auto space-y-8">

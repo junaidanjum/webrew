@@ -7,8 +7,8 @@
 		"defaultCoffeeAmount": 30,
 		"steps": [
 			{ "instruction": "Add {coffeeAmount}g of coffee to v60 filter.", "duration": 10 },
-			{ "instruction": "Add {coffeeAmount*2}g of water to wet the coffee evenly. Wait for 45 seconds for the coffee to bloom.", "duration": 45 },
-			{ "instruction": "Gently swirl the coffee slurry to ensure even saturation.", "duration": 15 },
+			{ "instruction": "Add {coffeeAmount*2}g of water to wet the coffee evenly.", "duration": 15 },
+			{ "instruction": "Gently swirl the coffee slurry to ensure even saturation and let it rest and bloom for 45 seconds.", "duration": 45 },
 			{ "instruction": "Pour water up to {waterAmount*0.6}g of total water.", "duration": 30 },
 			{ "instruction": "Complete pouring water up to {waterAmount}g.", "duration": 30 },
 			{ "instruction": "Stir with a spoon to remove any remaining coffee grounds of the wall. Give it a gentle swirl.", "duration": 15 },
@@ -38,12 +38,12 @@
 		"ratio": 16.36,
 		"defaultCoffeeAmount": 22,
 		"steps": [
-			{ "instruction": "Rinse filter & pre-heat V60, Pour in grounds, flatten", "duration": 10 },
+			{ "instruction": "Rinse filter & pre-heat V60, Pour in grounds, flatten.", "duration": 10 },
 			{ "instruction": "Pre-wet with {3 * coffeeAmount}g of water.", "duration": 15 },
-			{ "instruction": "Gently excavate to wet all the grounds", "duration": 10 },
+			{ "instruction": "Gently excavate to wet all the grounds within 10 seconds.", "duration": 10 },
 			{ "instruction": "Let the coffee bloom.", "duration": 20 },
-			{ "instruction": "At 45s, start main pour until {waterAmount}g.", "duration": 50 },
-			{ "instruction": "Gently stir to stop grounds from clinging to sides", "duration": 25 },
+			{ "instruction": "Start main pour until {waterAmount}g.", "duration": 50 },
+			{ "instruction": "Gently stir to stop grounds from clinging to sides", "duration": 15 },
 			{ "instruction": "Swirl V60 to flatten coffee bed for even brew", "duration": 10 },
 			{ "instruction": "Drawdown should be complete within 3 minutes.", "duration": 50 }
 		]
