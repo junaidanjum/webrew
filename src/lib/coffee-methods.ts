@@ -3,6 +3,8 @@ import frenchPressTechniques from "./french-press.json"
 import chemexTechniques from "./chemex.json"
 import origamiTechniques from "./origami.json"
 import cleverTechniques from "./clever.json"
+import kalitaTechniques from "./kalita.json"
+
 export interface BrewingStep {
 	instruction: string
 	duration: number // in seconds
@@ -122,6 +124,20 @@ export const brewingMethods: BrewingMethod[] = [
 						coffeeAmount,
 						waterAmount
 					})
+				}))
+			}
+		}))
+	},
+	{
+		id: "kalita",
+		name: "Kalita",
+		description: "A pour-over dripper that uses a paper filter.",
+		techniques: kalitaTechniques.map(technique => ({
+			...technique,
+			steps: (coffeeAmount: number, waterAmount: number) => {
+				return technique.steps.map(step => ({
+					...step,
+					instruction: renderInstruction(step.instruction, { coffeeAmount, waterAmount })
 				}))
 			}
 		}))

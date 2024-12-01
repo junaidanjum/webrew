@@ -1,0 +1,56 @@
+[
+	{
+		"id": "kalita-1",
+		"name": "Scott Rao Kalita Wave recipe",
+		"description": "A methodical and precise recipe by Scott Rao, focusing on even extraction through careful pouring and agitation.",
+		"ratio": 17,
+		"defaultCoffeeAmount": 20,
+		"steps": [
+			{ "instruction": "Grind the coffee, rinse the filter with hot water, place it in the Kalita, and add the grounds.", "duration": 10 },
+			{ "instruction": "Pre-wet the grounds with {3*coffeeAmount}g of water.", "duration": 10 },
+			{ "instruction": "Spin the brewer gently or stir to ensure even saturation.", "duration": 10 },
+			{ "instruction": "Let the coffee bloom for 25 seconds.", "duration": 25 },
+			{ "instruction": "Slowly pour water until it reaches {0.6*waterAmount}g of total water.", "duration": 30 },
+			{ "instruction": "Allow the slurry to drain halfway before the next pour.", "duration": 40 },
+			{ "instruction": "Pour the remaining water until you reach {waterAmount}g.", "duration": 10 },
+			{ "instruction": "Give the brewer a final gentle spin and wait for the drawdown to finish.", "duration": 135 }
+		]
+	},
+	{
+		"id": "kalita-2",
+		"name": "James McCarthy Kalita Wave recipe",
+		"description": "A championship-winning recipe by James McCarthy, emphasizing controlled pulse pours for a balanced cup.",
+		"ratio": 16,
+		"defaultCoffeeAmount": 24,
+		"steps": [
+			{ "instruction": "Grind and sift the coffee, rinse the filter, add the grounds to the Kalita, and level them by shaking.", "duration": 0 },
+			{ "instruction": "Pre-wet the grounds with {2*coffeeAmount}g of water.", "duration": 15 },
+			{ "instruction": "Let the coffee bloom for 45 seconds.", "duration": 45 },
+			{ "instruction": "Pulse pour water steadily until reaching {0.5*waterAmount}g, keeping the water level consistent.", "duration": 30 },
+			{ "instruction": "Continue pulse pouring until the total reaches {waterAmount}g, using a flow-restricted kettle if available.", "duration": 30 },
+			{ "instruction": "Wait for the complete drawdown to finish.", "duration": 75 }
+		]
+	},
+	{
+		"id": "kalita-3",
+		"name": "George Howell Coffee Kalita Wave recipe",
+		"description": "A unique step-by-step recipe by George Howell Coffee, designed for maximum control and precision in pouring.",
+		"ratio": 16,
+		"defaultCoffeeAmount": 25,
+		"steps": [
+			{ "instruction": "Rinse the filter until warm, grind the coffee, add it to the Kalita, and level the grounds by shaking.", "duration": 0 },
+			{ "instruction": "Pour {0.16*waterAmount}g of water over the grounds.", "duration": 15 },
+			{ "instruction": "Wait for 15 seconds.", "duration": 15 },
+			{ "instruction": "Pour {0.33*waterAmount}g of water.", "duration": 15 },
+			{ "instruction": "Wait for 15 seconds.", "duration": 15 },
+			{ "instruction": "Pour {0.5*waterAmount}g of water.", "duration": 15 },
+			{ "instruction": "Wait for 15 seconds.", "duration": 15 },
+			{ "instruction": "Pour {0.66*waterAmount}g of water.", "duration": 15 },
+			{ "instruction": "Wait for 15 seconds.", "duration": 15 },
+			{ "instruction": "Pour {0.83*waterAmount}g of water.", "duration": 15 },
+			{ "instruction": "Wait for 15 seconds.", "duration": 15 },
+			{ "instruction": "Pour {waterAmount}g of water.", "duration": 15 },
+			{ "instruction": "Wait for the drawdown to complete.", "duration": 45 }
+		]
+	}
+]
