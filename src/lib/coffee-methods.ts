@@ -4,6 +4,7 @@ import chemexTechniques from "./chemex.json"
 import origamiTechniques from "./origami.json"
 import cleverTechniques from "./clever.json"
 import kalitaTechniques from "./kalita.json"
+import aeropressTechnique from "./aeropress.json"
 
 export interface BrewingStep {
 	instruction: string
@@ -133,6 +134,20 @@ export const brewingMethods: BrewingMethod[] = [
 		name: "Kalita",
 		description: "A pour-over dripper that uses a paper filter.",
 		techniques: kalitaTechniques.map(technique => ({
+			...technique,
+			steps: (coffeeAmount: number, waterAmount: number) => {
+				return technique.steps.map(step => ({
+					...step,
+					instruction: renderInstruction(step.instruction, { coffeeAmount, waterAmount })
+				}))
+			}
+		}))
+	},
+	{
+		id: "aeropress",
+		name: "AeroPress",
+		description: "AeroPress is a coffee brewing device that allows for a quick and easy way to make coffee.",
+		techniques: aeropressTechnique.map(technique => ({
 			...technique,
 			steps: (coffeeAmount: number, waterAmount: number) => {
 				return technique.steps.map(step => ({
