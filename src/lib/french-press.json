@@ -7,9 +7,9 @@
 		"defaultCoffeeAmount": 30,
 		"steps": [
 			{ "instruction": "Add {coffeeAmount}g of coarse ground coffee to the French Press.", "duration": 10 },
-			{ "instruction": "Add just enough water to soak grounds.", "duration": 55 },
-			{ "instruction": "Stir gently.", "duration": 5 },
-			{ "instruction": "Add the remaining water (Total: {waterAmount}g).", "duration": 30 },
+			{ "instruction": "Add just enough water to soak the grounds and let the coffee bloom.", "duration": 50 },
+			{ "instruction": "Stir gently for 10 seconds.", "duration": 10 },
+			{ "instruction": "Add the remaining water upto the total of {waterAmount}g.", "duration": 30 },
 			{ "instruction": "Place the lid on and wait for 4 minutes.", "duration": 240 },
 			{ "instruction": "Slowly press the plunger down and enjoy the coffee!", "duration": 30 }
 		]
