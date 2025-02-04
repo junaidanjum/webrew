@@ -37,7 +37,7 @@
 		"ratio": 16,
 		"defaultCoffeeAmount": 15,
 		"steps": [
-			{ "instruction": "Add the ground coffee to the chamber, then shake it to level the coffee bed.", "duration": 0 },
+			{ "instruction": "Add the ground coffee to the chamber, then shake it to level the coffee bed.", "duration": 10 },
 			{ "instruction": "Pour {waterAmount}g of hot water into the chamber slowly and evenly.", "duration": 10 },
 			{ "instruction": "Insert the plunger and press down rapidly in about 20 seconds.", "duration": 20 }
 		]
@@ -49,7 +49,7 @@
 		"ratio": 16,
 		"defaultCoffeeAmount": 15,
 		"steps": [
-			{ "instruction": "Use the inverted method: Place the AeroPress upside down, then add the ground coffee and shake to level.", "duration": 0 },
+			{ "instruction": "Use the inverted method: Place the AeroPress upside down, then add the ground coffee and shake to level.", "duration": 10 },
 			{ "instruction": "Pour {waterAmount}g of hot water evenly into the chamber over the coffee.", "duration": 10 },
 			{ "instruction": "Stir the coffee 5 times quickly to ensure even saturation.", "duration": 10 },
 			{ "instruction": "Let the coffee brew for 2 minutes.", "duration": 120 },
