@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { brewingMethods, BrewingMethod, BrewingTechnique } from "@/lib/coffee-methods"
 import MethodSelection from "@/components/method-selection"
-import BrewingGuide from "@/components/brewing-guide"
+import { BrewingGuide } from "@/components/brewing-guide"
 import CoffeeAmountInput from "@/components/coffee-amount-input"
 import { Coffee, Loader } from "lucide-react"
 import Footer from "@/components/footer"
